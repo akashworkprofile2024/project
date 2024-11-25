@@ -11,8 +11,11 @@
 <!-- Css -->
  <link rel="stylesheet" href="style.css">
  <body>
-    <main class="container-fluid" style="background-color: rgb(167, 143, 143);">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <main class="container-fluid" >
+
+      <!-- //// NAVIGATION BAR /// -->
+       
+        <nav class="navbar navbar-expand-sm ">
           <!-- Logo -->
           <a href="" class="navbar-brand ms-2">
             <img id="cmplogo" src="image/demoimage/cmpdemo.jpg" alt="Company Image">
@@ -21,29 +24,42 @@
           <a class="navbar-brand" href="#">YDMI</a>
     
           <!-- Collapse Button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colsiblenav">
+          <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#colsiblenav">
             <span class="navbar-toggler-icon"></span>
           </button>
     
           <!-- Collapse Element -->
           <div class="collapse navbar-collapse" id="colsiblenav">
-            <ul class="navbar-nav  ms-5  w-100 justify-content-center">
-              <li class="nav-item ms-3"><a class="nav-link" href="">Home</a></li>
-              <li class="nav-item ms-3"><a class="nav-link" href="">Course list</a></li>
-              <li class="nav-item ms-3"><a class="nav-link" href="">Services</a></li>
-              <li class="nav-item ms-3"><a class="nav-link" href="">Contact</a></li>
+            <ul class="navbar-nav  ms-sm-1  w-100 justify-content-center">
+              <li class="nav-item ms-sm-1 " id="stylenavitems"><a class="nav-link  rounded-pill px-4 my-2" id="configitems" href="">Home</a></li>
+              <li class="nav-item ms-sm-2" id="stylenavitems"><a class="nav-link rounded-pill px-4 my-2" id="configitems" href="">Course list</a></li>
+              <li class="nav-item ms-sm-1" id="stylenavitems"><a class="nav-link rounded-pill px-4 my-2" id="configitems" href="">Services</a></li>
+              <li class="nav-item ms-sm-1" id="stylenavitems"><a class="nav-link rounded-pill px-4 my-2" id="configitems" href="">Contact</a></li>
             </ul>
-            <ul class="navbar-nav me-2 mt-1 border border-primary rounded-pill mb-1" id="sign">
-              <li class="nav-item"><a class="nav-link px-4 text-primary" href="">SignUp</a></li>
+            <ul class="navbar-nav me-2 mt-1 border  border-primary  rounded-pill mb-1" >
+              <li class="nav-item" id="stylesignupbtn"><a class="nav-link border-primary rounded-pill px-4" id="signupconfig" href="">SignUp</a></li>
             </ul>
             <ul class="navbar-nav bg-primary me-2 border border-primary rounded-pill" id="login">
-                <li class="nav-item"><a class="nav-link px-4" href="">Login</a></li>
+                <li class="nav-item" id="stylelogin" ><a class="nav-link px-4" id="configlogintext" href="">Login</a></li>
             </ul>
           </div>
         </nav>
 
 
+       
         
+
+
+
+
+
+
+
+
+
+
+
+
       </main>
 </body>
 </html>
