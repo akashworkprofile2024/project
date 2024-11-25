@@ -1,16 +1,75 @@
-/* company Logo */
+/* ADD FONT STYLES FILE */
+@font-face{
+    font-family: SofiaSans-variablef ;
+    src: url(fonts/SofiaSans-variablef.ttf);
+}
+
+/* =============================================== */
+
+
+/* COMPANY LOGO */
 #cmplogo{
     width: 30px;
     height: 30px;
 }
 
-
-/* Sign in */
-#sign:hover{
-    transition: background-color 2s ease;
+/* NAVBAR ITEMS */
+#stylenavitems{
+    font-family: SofiaSans-variablef ;
+    font-size:large;   
+    font-weight: bold; 
 }
 
-#sign{
-    background-color: ;
+#configitems{
+    color: black;
 }
+
+#configitems:hover{
+    
+    transition: background-color 1s ease;
+    transition: color 0.5s ease;
+    background-color:#0D6EFD; 
+    color: white;
+}
+
+.configborder{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+/* SIGN UP */
+#stylesignupbtn{
+    font-family: SofiaSans-variablef ; 
+    font-size: medium;  
+    font-weight: bold;
+}
+
+#signupconfig:hover{
+    
+    transition: background-color 1s ease;
+    transition: color 0.5s ease;
+    background-color:#0D6EFD; 
+    color: white;
+}
+
+#signupconfig{
+    color:#0D6EFD;
+    
+}
+
+
+/* LOGIN  */
+
+#stylelogin{
+    font-family:SofiaSans-variablef;
+    font-size: medium;
+    font-weight: bold;   
+}
+
+#configlogintext{
+    color: white;
+}
+
+
 
