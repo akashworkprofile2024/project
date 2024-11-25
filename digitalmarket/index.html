@@ -8,6 +8,8 @@
 <!-- bootstrap -->
  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
  <script src="bootstrap/js/bootstrap.min.js"></script>
+ <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 <!-- Css -->
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="animatestyle.css">
@@ -32,11 +34,31 @@
           <!-- Collapse Element -->
           <div class="collapse navbar-collapse" id="colsiblenav">
             <ul class="navbar-nav  ms-sm-1  w-100 justify-content-center scale-up-center">
+              
               <li class="nav-item ms-sm-1 " id="stylenavitems"><a class="nav-link  rounded-pill px-4 my-2" id="configitems" href="">Home</a></li>
-              <li class="nav-item ms-sm-2" id="stylenavitems"><a class="nav-link rounded-pill px-4 my-2" id="configitems" href="">Course list</a></li>
-              <li class="nav-item ms-sm-1" id="stylenavitems"><a class="nav-link rounded-pill px-4 my-2" id="configitems" href="">Services</a></li>
+              
+              <li class="nav-item dropdown ms-sm-2" id="stylenavitems">
+                <a class="nav-link dropdown-toggle rounded-pill px-4 my-2" role="button" data-bs-toggle="dropdown" id="configitems" href="">Course list</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="">Service1</a></li>
+                  <li><a class="dropdown-item" href="">Service2</a></li>
+                  <li><a class="dropdown-item" href="">Service3</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown ms-sm-2" id="stylenavitems">
+                <a class="nav-link dropdown-toggle rounded-pill px-4 my-2" role="button" data-bs-toggle="dropdown" id="configitems" href="">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="">Service1</a></li>
+                  <li><a class="dropdown-item" href="">Service2</a></li>
+                  <li><a class="dropdown-item" href="">Service3</a></li>
+                </ul>
+              </li>
+              
               <li class="nav-item ms-sm-1" id="stylenavitems"><a class="nav-link rounded-pill px-4 my-2" id="configitems" href="">Contact</a></li>
+            
             </ul>
+            
             <ul class="navbar-nav me-2 mt-1 border  border-primary border-2 rounded-pill mb-1 scale-up-center" >
               <li class="nav-item" id="stylesignupbtn"><a class="nav-link border-primary rounded-pill px-4" id="signupconfig" href="">SignUp</a></li>
             </ul>
