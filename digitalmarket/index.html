@@ -13,10 +13,11 @@
 <!-- Css -->
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="animatestyle.css">
+
  <body>
     <main class="container-fluid" >
 
-      <!-- //// NAVIGATION BAR /// -->
+      <!-- ====== DEPLOY NAVIGATION BAR ====== -->
        
         <nav class="navbar navbar-expand-sm  ">
           <!-- Logo -->
@@ -37,18 +38,20 @@
               
               <li class="nav-item ms-sm-1 " id="stylenavitems"><a class="nav-link  rounded-pill px-4 my-2" id="configitems" href="">Home</a></li>
               
-              <li class="nav-item dropdown ms-sm-2" id="stylenavitems">
+              <li class="nav-item dropdown  ms-sm-2 " id="stylenavitems">
                 <a class="nav-link dropdown-toggle rounded-pill px-4 my-2" role="button" data-bs-toggle="dropdown" id="configitems" href="">Course list</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="">Service1</a></li>
-                  <li><a class="dropdown-item" href="">Service2</a></li>
-                  <li><a class="dropdown-item" href="">Service3</a></li>
+                
+                <ul class="dropdown-menu styledropdown">
+                  <li><a class="dropdown-item" href="">Course 1</a></li>
+                  <li><a class="dropdown-item" href="">Course 2</a></li>
+                  <li><a class="dropdown-item" href="">Course 3</a></li>
                 </ul>
+              
               </li>
               
               <li class="nav-item dropdown ms-sm-2" id="stylenavitems">
                 <a class="nav-link dropdown-toggle rounded-pill px-4 my-2" role="button" data-bs-toggle="dropdown" id="configitems" href="">Services</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu styledropdown">
                   <li><a class="dropdown-item" href="">Service1</a></li>
                   <li><a class="dropdown-item" href="">Service2</a></li>
                   <li><a class="dropdown-item" href="">Service3</a></li>
@@ -60,15 +63,31 @@
             </ul>
             
             <ul class="navbar-nav me-2 mt-1 border  border-primary border-2 rounded-pill mb-1 scale-up-center" >
-              <li class="nav-item" id="stylesignupbtn"><a class="nav-link border-primary rounded-pill px-4" id="signupconfig" href="">SignUp</a></li>
+              <li class="nav-item" id="stylesignupbtn"><a class="nav-link border-primary rounded-pill px-4" id="signupconfig" href="#">SignUp</a></li>
             </ul>
-            <ul class="navbar-nav bg-primary me-2 border border-primary rounded-pill scale-up-center" id="login">
-                <li class="nav-item" id="stylelogin" ><a class="nav-link px-4" id="configlogintext" href="">Login</a></li>
+
+            <ul class="navbar-nav bg-primary me-2 border-2 rounded-pill scale-up-center" id="login">
+                <li class="nav-item border-2 rounded-pill" id="stylelogin" ><a class="nav-link rounded-pill px-4" id="configlogintext" href="#">Login</a></li>
             </ul>
+          
           </div>
         </nav>
 
-
+      <!-- DEPLOY BANNER  -->
+      <header>
+             <div class="row">
+                   <div class="col-6 border border-dark">
+                    <div class="text-sm-center">
+                       <span>Elevate Your Brand</span><br>
+                    </div>
+                    <span><span>Elevate </span>Your Business.</span>
+                   </div>
+                   <div class="col-6 border border-danger">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit optio, necessitatibus fuga earum iusto veritatis sint sit quibusdam voluptates voluptatum voluptatem assumenda debitis! Iusto nihil nisi ipsam non obcaecati adipisci.
+                   </div>
+             </div>
+      </header>
+      
        
         
 
