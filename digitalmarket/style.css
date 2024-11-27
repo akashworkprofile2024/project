@@ -13,6 +13,14 @@
     height: 30px;
 }
 
+/* Company Name */
+
+.navbar-brand{
+    font-family: SofiaSans-variablef ; 
+    font-size: large;  
+    font-weight: bold;
+}
+
 /* NAVBAR ITEMS */
 #stylenavitems{
     font-family: SofiaSans-variablef ;
@@ -61,21 +69,40 @@
 
 /* LOGIN  */
 
+#stylelogin:hover,#configlogintext:hover{
+    
+    transition:background-color 1s ease;
+    background-color: #DECA79;
+    color: black;
+    
+    
+}
+
 #stylelogin{
     font-family:SofiaSans-variablef;
     font-size: medium;
     font-weight: bold;   
+
 }
 
 #configlogintext{
     color: white;
+    
 }
 
+/* DROPDOWN MENU */
 
 .dropdown-item{
     font-family: SofiaSans-variablef;
     font-weight: bold;
     font-size: medium;
+}
+
+.dropdown-item:hover{
+    transition: background-color 1s ease;
+    transition: color 0.5s ease;
+    background-color:#0D6EFD; 
+    color: white;
 }
 
 
