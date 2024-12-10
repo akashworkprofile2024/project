@@ -4,6 +4,20 @@
     src: url(fonts/SofiaSans-variablef.ttf);
 }
 
+@font-face {
+    font-family: caveat;
+    src: url(fonts/Caveat.ttf);
+}
+
+@font-face {
+    font-family:Pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: lexend;
+    src: url(fonts/Lexend-Regular.ttf);
+}
 /* =============================================== */
 
 
@@ -13,7 +27,7 @@
     height: 30px;
 }
 
-/* Company Name */
+/* COMPANY NAME */
 
 .navbar-brand{
     font-family: SofiaSans-variablef ; 
@@ -105,5 +119,25 @@
     color: white;
 }
 
+
+/* ATTRACT AUDIENCE ENDOURESE */
+
+span.wordconfig{
+       font-family: lexend;
+
+}
+
+span.wordconfig{
+    font-family: Pacifico;    
+}
+
+
+pre{
+    font-family: lexend; 
+}
+
+.shake-horizontal {
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
 
 
