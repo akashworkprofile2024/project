@@ -1,0 +1,39 @@
+/* FONTS LINKED */
+
+@font-face {
+      font-family: lexend;
+      src: url(fonts/Lexend-Regular.ttf);
+  }
+
+@font-face {
+      font-family:crimsonreg;
+      src: url(fonts/crimson_regular.ttf);
+}  
+
+
+/* =========  DESIGNING PART ===========  */
+
+/* NAV-ITEMS */
+
+#configitems{
+      font-family: lexend;
+      font-size:larger;
+}
+  
+#companyname{
+      font-family: crimsonreg;
+      font-size:x-large;
+}
+
+/* SIGN IN */
+
+#configsignup{
+      font-family: lexend;
+}
+
+
+
+
+#configlogin{
+      font-family: lexend;
+}
