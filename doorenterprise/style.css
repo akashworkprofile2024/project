@@ -17,13 +17,21 @@
 
 #configitems{
       font-family: lexend;
-      font-size:larger;
+      font-size:large;
+       
+}
+
+#configitems:hover{
+      color: white;
+      background-color: ;
 }
   
 #companyname{
       font-family: crimsonreg;
       font-size:x-large;
 }
+
+
 
 /* SIGN IN */
 
@@ -32,8 +40,12 @@
 }
 
 
-
-
 #configlogin{
       font-family: lexend;
 }
+
+
+
+
+
+
