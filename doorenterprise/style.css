@@ -13,6 +13,17 @@
 
 /* =========  DESIGNING PART ===========  */
 
+/* BACKGROUND IMAGE */
+body{
+      background-image: url("../doorenterprise/image/backimage.png");
+}
+
+.collapse{
+      background-image: url(../doorenterprise/image/backimage.png);
+}
+
+
+
 /* NAV-ITEMS */
 
 #configitems{
@@ -22,8 +33,9 @@
 }
 
 #configitems:hover{
-      color: white;
-      background-color: ;
+      color: #f8e160;
+      background-color: black;
+      
 }
   
 #companyname{
@@ -42,8 +54,15 @@
 
 #configlogin{
       font-family: lexend;
+      font-size:large;
 }
 
+
+#configbanner{
+      -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+}
 
 
 
