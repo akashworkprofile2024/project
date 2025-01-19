@@ -11,19 +11,21 @@
  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 <!-- Css Linked -->
 <link rel="stylesheet" href="../doorenterprise/style.css">
+<link rel="stylesheet" href="../doorenterprise/animation.css">
 <link rel="stylesheet" href="../doorenterprise/mediaquries.css">
+
  <body>
   <main class="container-fluid" >
 
     <!-- ====== DEPLOY NAVIGATION BAR ====== -->    
 
-      <nav class=" container-fluid bg-white navbar navbar-expand-sm bg-dark" style="background-image: url(../doorenterprise/image/backimage.png);">
+      <nav class="container-fluid bg-white navbar navbar-expand-sm bg-dark" style="background-image: url(../doorenterprise/image/backimage.png);">
         <!-- LOGO -->
-        <a href="" class="navbar-brand ms-2">
+        <a href="" class="navbar-brand ms-2 scale-in-center">
           <img id="cmplogo" src="image/companylogo.png" width="55px" alt="Company Image" title="">
         </a>
         <!-- COMPANY NAME -->
-        <a class="navbar-brand" id="companyname" href="#">The Door Enterprise</a>
+        <a class="navbar-brand scale-in-center" id="companyname" href="#">The Door Enterprise</a>
   
         <!-- COLLAPSE BUTTON -->
         <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#colsiblenav">
@@ -34,7 +36,7 @@
          
         <div class="collapse navbar-collapse" id="colsiblenav">
                  
-          <ul class="navbar-nav  me-sm-5  w-100 justify-content-center scale-up-center">
+          <ul class="navbar-nav  me-sm-5  w-100 justify-content-center scale-in-center">
             
             <li class="nav-item ms-sm-1 " id="stylenavitems"><a class="nav-link  rounded-pill px-4 my-2" id="configitems" href="">Home</a></li>
             
@@ -71,24 +73,20 @@
     </div>
   </main> 
   
-  <div class="container-fluid p-2">
+  <div class="container-fluid p-2 slide-in-left">
       <img id="configbanner" class="img-fluid mediaquireimg  rounded-4"  src="image/mainbannerredit.png" alt="" >
   </div><br>
 
-  <div class="container-fluid p-2 bg-danger position-relative">
+  <div  class="container-fluid p-2  position-relative slide-in-right">
     <!-- Image -->
-    <img class="img-fluid w-100 rounded-4" src="../doorenterprise/image/banner21.jpg" alt="">
+    <img id="configbanner" class="img-fluid w-100 rounded-4" src="../doorenterprise/image/banner21.jpg" alt="">
 
     <!-- Overlay Text -->
-    <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
-        <h1 id="upperhead">Transform your space into a haven of comfort and Style</h1>
-        <p>Tailor every Detail: False Celling, Electrical, Flooring / Wooden Flooring, Paint / Wall Painting, <br> &nbsp;&nbsp; Murals, Modular Kitchen, Hydraulic Bed, Wardrobe’s, Sofa</p>
-    </div>
-</div>
+    <!-- <div  class="position-absolute w-75 top-50 start-50 translate-middle text-white text-center">
+      <h1 id="upperhead" class="text-left">Transform your space into a haven of comfort and Style</h1><br>
+      <p id="lowerhead">Tailor every Detail: False Celling, Electrical, Flooring / Wooden Flooring, Paint / Wall Painting, <br> &nbsp;&nbsp; Murals, Modular Kitchen, Hydraulic Bed, Wardrobe’s, Sofa</p>
+    </div> -->
+  </div>
      
 </body>
-
-
-<style>
-     </style>
 </html>
