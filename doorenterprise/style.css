@@ -29,6 +29,8 @@ body{
       background-image: url("../doorenterprise/image/backimage.png");
 }
 
+
+
 .collapse{
       background-image: url(../doorenterprise/image/backimage.png);
 }
@@ -68,7 +70,7 @@ body{
       font-size:large;
 }
 
-
+/* MAIN BANNER */
 #configbanner{
       -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
@@ -76,16 +78,77 @@ body{
 }
 
 
-#upperhead{
-      font-family: playwritein;
-      text-shadow: 0px 0px 9px rgba(0,0,0,0.7);
+/* SECOND BANNER */
+
+#secondbanner{
+       -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 }
 
-#lowerhead{
+#uppertext{
+      font-family: playwritein;
+      text-shadow: 0px 0px 9px rgba(0,0,0,0.7);
+      
+}
+
+#lowertext{
       font-family: robomono ; 
       text-shadow: 0px 0px 9px rgba(0,0,0,0.7);
 } 
 
+/*    RELATED WORK */
 
+.related-works {
+      background: url('https://via.placeholder.com/300x200') repeat; /* Replace with your pattern background */
+      padding: 20px;
+      text-align: left;
+      position: relative;
+    }
+    .related-works h1 {
+      color: #C18847; /* Brown color for "Works" */
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      margin: 0;
+    }
+    .related-works h2 {
+      color: black; /* Black color for "Related" */
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+      margin: 0 0 10px 0;
+    }
+    .vertical-line {
+      width: 5px;
+      height: 100px;
+      background-color: #a56b2a;
+      margin-right: 10px;
+    }
+
+/* SLIDE MENU  */
+.image-menu {
+      display: flex;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+    }
+    .image-menu img {
+      max-height: 250px;
+      margin-right: 10px;
+      transition: transform 0.3s;
+    }
+    .image-menu img:hover {
+      transform: scale(1.1);
+    }
+    .arrow-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 24px;
+      user-select: none;
+    }
 
 

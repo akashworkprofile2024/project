@@ -1,0 +1,45 @@
+@media (width: 378px) {
+  /* FIRST BANNER */
+    #configbanner{
+         height: 200px;
+   }
+   
+  /* SECOND BANNER */
+  #msecondbanner{
+       top: -50px;
+  }
+  
+  #uppertext{
+       font-size: 15px;
+       position: absolute;
+       top: -30px;
+       
+   }
+
+   #lowertext{
+     font-size: 8.5px;
+     font-weight: bold;
+     position: relative;
+     top: 1px;
+     
+   }
+
+  /* RELATED WORK */
+
+
+  #configrelated{
+    position: absolute;
+    left: -48px;
+    top: 500px;
+    
+  }
+  #works{
+       font-size:40px; 
+  }
+
+
+ }
+
+
+ 
+ 

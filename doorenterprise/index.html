@@ -12,7 +12,7 @@
 <!-- Css Linked -->
 <link rel="stylesheet" href="../doorenterprise/style.css">
 <link rel="stylesheet" href="../doorenterprise/animation.css">
-<link rel="stylesheet" href="../doorenterprise/mediaquries.css">
+<link rel="stylesheet" href="../doorenterprise/screen_size/mediaquries.css">
 
  <body>
   <main class="container-fluid" >
@@ -22,10 +22,10 @@
       <nav class="container-fluid bg-white navbar navbar-expand-sm bg-dark" style="background-image: url(../doorenterprise/image/backimage.png);">
         <!-- LOGO -->
         <a href="" class="navbar-brand ms-2 scale-in-center">
-          <img id="cmplogo" src="image/companylogo.png" width="55px" alt="Company Image" title="">
+          <img id="cmplogo" src="../doorenterprise/image/company_logo.png" width="60px" alt="Company Image" title="">
         </a>
         <!-- COMPANY NAME -->
-        <a class="navbar-brand scale-in-center" id="companyname" href="#">The Door Enterprise</a>
+        <a class="navbar-brand scale-in-center" id="companyname" href="#">Arav Interior</a>
   
         <!-- COLLAPSE BUTTON -->
         <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#colsiblenav">
@@ -71,22 +71,66 @@
           
       </nav>
     </div>
-  </main> 
+  </main>
   
+  <!-- MAIN Banner -->
   <div class="container-fluid p-2 slide-in-left">
-      <img id="configbanner" class="img-fluid mediaquireimg  rounded-4"  src="image/mainbannerredit.png" alt="" >
-  </div><br>
+      <img id="configbanner" class="img-fluid rounded-4"  src="image/mainbannerredit.png" alt="" >
+  </div><br><br><br><br>
 
-  <div  class="container-fluid p-2  position-relative slide-in-right">
+  <!-- Second Banner -->
+  <div  class="container-fluid d-sm-flex justify-content-center position-relative slide-in-right bg-danger" id="msecondbanner">
     <!-- Image -->
-    <img id="configbanner" class="img-fluid w-100 rounded-4" src="../doorenterprise/image/banner21.jpg" alt="">
-
+    <img id="secondbanner" class="img-fluid w-100 h-100 rounded-4" src="../doorenterprise/image/banner21.jpg" alt="">
     <!-- Overlay Text -->
-    <!-- <div  class="position-absolute w-75 top-50 start-50 translate-middle text-white text-center">
-      <h1 id="upperhead" class="text-left">Transform your space into a haven of comfort and Style</h1><br>
-      <p id="lowerhead">Tailor every Detail: False Celling, Electrical, Flooring / Wooden Flooring, Paint / Wall Painting, <br> &nbsp;&nbsp; Murals, Modular Kitchen, Hydraulic Bed, Wardrobe’s, Sofa</p>
-    </div> -->
-  </div>
-     
+    <div class=""  style="position: absolute; top: 40%;">
+      <h1 class="text-center text-light h1 focus-in-expand" id="uppertext">Transform your space into a haven of comfort and Style.</h1><br>
+      <p id="lowertext" class="text-center text-light focus-in-expand"><b>Tailor every Detail: False Celling, Electrical, Flooring / Wooden Flooring, Paint / Wall Painting, <br> &nbsp;&nbsp; Murals, Modular Kitchen, Hydraulic Bed, Wardrobe’s, Sofa</b></p>
+    </div>  
+  </div><br><br><br><br><br><br><br><br>
+
+  <!-- RELATED WORK -->
+  <div class="container ms-5 slide-top" id="configrelated">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="related-works d-flex align-items-center">
+          <div class="vertical-line"></div>
+          <div>
+            <h2 id="related">Related</h2>
+            <h1 id="works">Works</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+
+  <!-- SLIDER MENU -->
+  <div class="container mt-5">
+    <div class="d-flex align-items-center">
+      <!-- Left Arrow -->
+      <div class="arrow-btn me-2" onclick="scrollMenu(-300)">&#9664;</div>
+
+      <!-- Image Menu -->
+      <div class="image-menu flex-grow-1 d-flex gap-2">
+        <img src="../doorenterprise/data/murals.jpg" class="rounded-1"  alt="Image 1">
+        <img src="../doorenterprise/data/wallpainting.jpg"  alt="Image 2">
+        <img src="../doorenterprise/data/woodfloor.jpg"  alt="Image 3">
+        <img src="../doorenterprise/data/wardrobe.jpg"  alt="Image 4">
+        <img src="https://via.placeholder.com/200x150" alt="Image 5">
+        <img src="https://via.placeholder.com/200x150" alt="Image 6">
+        <img src="https://via.placeholder.com/200x150" alt="Image 7">
+      </div>
+
+      <!-- Right Arrow -->
+      <div class="arrow-btn ms-2" onclick="scrollMenu(300)"><img src="../experiment/arrow.png" class="img-fluid" width="30"  alt=""></div>
+    </div>
+  </div><br><br>
+  
 </body>
+<script>
+  const scrollMenu = (amount) => {
+    const menu = document.querySelector('.image-menu');
+    menu.scrollBy({ left: amount, behavior: 'smooth' });
+  };
+</script>
 </html>

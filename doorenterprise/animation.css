@@ -1,4 +1,5 @@
- @keyframes scale-in-center {
+ /* ANIMATION FOR NAVIGATION */
+ /* @keyframes scale-in-center {
     0% {
       transform: scale(0);
       opacity: 1;
@@ -12,24 +13,27 @@
   .scale-in-center {
     animation: scale-in-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    
-
-@keyframes slide-in-left {
-    0% {
-      transform: translateX(-1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
+     */
+/* ANIMATION FOR MAIN BANNER */
+ 
+ @keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
   }
-  
-    .slide-in-left {
-        animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+	animation: slide-in-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both ;
+}
 
 
+
+
+/* ANIMATION FOR SECOND BANNER  */
 @keyframes slide-in-right {
     0% {
       transform: translateX(1000px);
@@ -47,3 +51,39 @@
 
 
     
+/* SECOND BANNER TEXT */
+ 
+ @keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.focus-in-expand {
+	animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s both;
+}
+
+
+/* RELATED WORK */
+
+
+ @keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+
+.slide-top {
+	animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
