@@ -6,37 +6,72 @@
    
   /* SECOND BANNER */
   #msecondbanner{
-       top: -50px;
-  }
-  
-  #uppertext{
-       font-size: 15px;
-       position: absolute;
-       top: -30px;
+       width: 500px;
+       height: 200px;
        
+  }
+  #uppertext{
+       font-size: medium;
+       position: absolute;
+       text-align: center;
+       top: 30px;
+       left: -5px;
+       padding: 5%;
+       animation: none;
    }
 
    #lowertext{
-     font-size: 8.5px;
-     font-weight: bold;
-     position: relative;
-     top: 1px;
-     
+    animation: none;
+    font-size: 44%;
+    position: absolute;
+    padding: 5%;
+    text-align: center;
+    top: 100px;
    }
 
-  /* RELATED WORK */
+   #secondbannerdiv{
+     position:relative;
+     top: -15px;
+   }
 
 
-  #configrelated{
-    position: absolute;
-    left: -48px;
-    top: 500px;
-    
-  }
-  #works{
-       font-size:40px; 
-  }
+   /* RELATED WORKS */
 
+   #configrelated{
+     position: relative;
+     top: 10px;
+     left: -70px;
+     font-size: 1px;
+   }
+
+   #works{
+     font-size: 2.5rem;
+   }
+
+
+   /* SLIDER MENU */
+
+   #msliderdivcontainer{
+        display: none;
+   }
+
+   .carousel-image {
+     width: 270px; /* Set a smaller width */
+     height: 270px; /* Maintain aspect ratio */
+   }
+
+   .custom-icon {
+     width: 30px; /* Adjust icon size */
+     height: 30px;
+   }
+
+
+   #mobileslider{
+     visibility: visible;
+     position: relative;
+     top: 200px;
+     
+   }
 
  }
 

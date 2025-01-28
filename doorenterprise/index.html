@@ -74,25 +74,23 @@
   </main>
   
   <!-- MAIN Banner -->
-  <div class="container-fluid p-2 slide-in-left">
+  <div class="container-fluid p-2 slide-in-left ">
       <img id="configbanner" class="img-fluid rounded-4"  src="image/mainbannerredit.png" alt="" >
-  </div><br><br><br><br>
+  </div><br><br>
 
-  <!-- Second Banner -->
-  <div  class="container-fluid d-sm-flex justify-content-center position-relative slide-in-right bg-danger" id="msecondbanner">
-    <!-- Image -->
-    <img id="secondbanner" class="img-fluid w-100 h-100 rounded-4" src="../doorenterprise/image/banner21.jpg" alt="">
-    <!-- Overlay Text -->
-    <div class=""  style="position: absolute; top: 40%;">
-      <h1 class="text-center text-light h1 focus-in-expand" id="uppertext">Transform your space into a haven of comfort and Style.</h1><br>
-      <p id="lowertext" class="text-center text-light focus-in-expand"><b>Tailor every Detail: False Celling, Electrical, Flooring / Wooden Flooring, Paint / Wall Painting, <br> &nbsp;&nbsp; Murals, Modular Kitchen, Hydraulic Bed, Wardrobe’s, Sofa</b></p>
-    </div>  
-  </div><br><br><br><br><br><br><br><br>
+  <!-- SECOND BANNER -->
+  <div class="container-fluid mt-5 slide-in-right" id="secondbannerdiv" >
+          <img id="msecondbanner" class="img-fluid rounded-4" src="../doorenterprise/image/secondbanner1.png" alt="">        
+          <p id="uppertext" class="text-light text-sm-center fw-bold focus-in-expand">Transform your space into a haven of comfort and Style.</p>
+          <p id="lowertext" class="text-light text-center fw-bold focus-in-expand">Tailor every Detail: False Celling, Electrical, Flooring / Wooden Flooring, <br> Paint / Wall Painting, Flooring, Paint / Wall Painting, Murals, Modular Kitchen, Hydraulic Bed, Wardrobe’s,Sofa</p>
+          
+  </div>
 
-  <!-- RELATED WORK -->
-  <div class="container ms-1 slide-top" id="configrelated">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6">
+  <!-- RELATED WORK --> 
+  <div class="container"> 
+  <div class=" ms-5 mt-5  slide-top" id="configrelated">
+    <div class="row justify-content-center ms-5 ">
+      <div class="col-12 col-md-8 col-lg-6 mt-5">
         <div class="related-works d-flex align-items-center">
           <div class="vertical-line"></div>
           <div>
@@ -102,35 +100,70 @@
         </div>
       </div>
     </div>
-  </div><br><br>
+  </div>
+</div>
 
   <!-- SLIDER MENU -->
-  <div class="container" >
+
+  <div class="container mt-1" id="msliderdivcontainer">
     <div class="d-flex align-items-center">
       <!-- Left Arrow -->
-      <div class="arrow-btn me-2" onclick="scrollMenu(-300)"><img class="img-fluid" src="../doorenterprise/image/previous.png" width="70"  alt=""></div>
+      <div class="arrow-btn me-2 sliderbtnconfig" onclick="scrollMenu(-300)"><img src="../doorenterprise/data/previous.png" class="img-fluid" width="50" alt=""></div>
 
       <!-- Image Menu -->
-      <div class="image-menu flex-grow-1 d-flex gap-2 p-3  rounded-2">
-        <img class="rounded-2 img-fluid slideshadow" src="../doorenterprise/data/murals.jpg" alt="Image 1">
-        <img class="rounded-2 img-fluid slideshadow" src="../doorenterprise/data/wallpainting.jpg"  alt="Image 2">
-        <img class="rounded-2 img-fluid slideshadow" src="../doorenterprise/data/woodfloor.jpg"  alt="Image 3">
-        <img class="rounded-2 img-fluid slideshadow" src="../doorenterprise/data/wardrobe.jpg"  alt="Image 4">
-        <img class="rounded-2 img-fluid slideshadow" src="../doorenterprise/data/masterbed.jpg" alt="Image 5">
-        <img class="rounded-2 img-fluid slideshadow" src="../doorenterprise/data/electric.jpg" alt="Image 6">
-        <img class="rounded-2 img-fluid slideshadow" src="../doorenterprise/data/false.jpg" alt="Image 7">
+      <div class="image-menu flex-grow-1 d-flex gap-2 p-3 ">
+        <img id="murals" src="../doorenterprise/data/murals.jpg"       class=" bg-danger img-fluid rounded-2 silder_imgconfig" alt="Image 1">
+        <img id="paint"  src="../doorenterprise/data/wallpainting.jpg" class="img-fluid rounded-2 silder_imgconfig" alt="Image 3">
+        <img id="floor"  src="../doorenterprise/data/woodfloor.jpg"    class="img-fluid rounded-2 silder_imgconfig" alt="Image 4">
+        <img id="bed" src="../doorenterprise/data/masterbed.jpg"    class="img-fluid rounded-2 silder_imgconfig" alt="Image 5">
+        <img id="drobe" src="../doorenterprise/data/wardrobe.jpg"     class="img-fluid rounded-2 silder_imgconfig" alt="Image 6">
+        <img id="electirc" src="../doorenterprise/data/electric.jpg"     class="img-fluid rounded-2 silder_imgconfig" alt="Image 7">
+        <img id="false" src="../doorenterprise/data/false.jpg"        class="img-fluid rounded-2 silder_imgconfig" alt="Image 7">
       </div>
 
       <!-- Right Arrow -->
-      <div class="arrow-btn ms-2" onclick="scrollMenu(300)"><img src="../doorenterprise/image/next.png" class="img-fluid" width="70"  alt=""></div>
+      <div class="arrow-btn ms-2 sliderbtnconfig" onclick="scrollMenu(300)"><img src="../doorenterprise/data/next.png" class="img-fluid" width="50"  alt=""></div>
+    </div>
+  </div><br>
+
+
+  <!-- mobile -->
+
+  <div class="container" id="mobileslider">
+    <div id="carouselExample" class="carousel slide d-flex justify-content-center" >
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../doorenterprise/data/murals.jpg" class="d-block mx-auto carousel-image rounded-2" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../doorenterprise/data/wallpainting.jpg" class="d-block mx-auto carousel-image rounded-2" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+          <img src="../doorenterprise/data/woodfloor.jpg" class="d-block mx-auto carousel-image rounded-2" alt="Slide 3">
+        </div>
+      </div>
+
+      <!-- Previous and Next Buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="position: absolute; left: -1%;">
+        <img src="../doorenterprise/data/previous.png" alt="Previous" class="custom-icon">
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="position: absolute; right: -1%;">
+        <img src="../doorenterprise/data/next.png" alt="Next" class="custom-icon">
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div><br><br>
-  
+   
+ 
+
 </body>
 <script>
   const scrollMenu = (amount) => {
     const menu = document.querySelector('.image-menu');
     menu.scrollBy({ left: amount, behavior: 'smooth' });
   };
+
 </script>
 </html>
