@@ -6,37 +6,112 @@
    
   /* SECOND BANNER */
   #msecondbanner{
-       top: -50px;
-  }
-  
-  #uppertext{
-       font-size: 15px;
-       position: absolute;
-       top: -30px;
+       width: 500px;
+       height: 200px;
        
+  }
+  #uppertext{
+       font-size: medium;
+       position: absolute;
+       text-align: center;
+       top: 30px;
+       left: -5px;
+       padding: 5%;
+       animation: none;
    }
 
    #lowertext{
-     font-size: 8.5px;
-     font-weight: bold;
-     position: relative;
-     top: 1px;
-     
+    animation: none;
+    font-size: 44%;
+    position: absolute;
+    padding: 5%;
+    text-align: center;
+    top: 100px;
    }
 
-  /* RELATED WORK */
+   #secondbannerdiv{
+     position:relative;
+     top: -15px;
+   }
 
 
-  #configrelated{
-    position: absolute;
-    left: -48px;
-    top: 500px;
+   /* RELATED WORKS */
+
+   #configrelated{
+     position: relative;
+     top: 10px;
+     left: -70px;
+     font-size: 1px;
+   }
+
+   #works{
+     font-size: 2.5rem;
+   }
+
+
+   /* SLIDER MENU */
+   
+   #msliderdivcontainer{
+         display: none;
+    }
+   #mobileslider{
+    display: block;
+    position: relative;
+    top: -100px;
     
   }
-  #works{
-       font-size:40px; 
+  
+   .carousel-image {
+     width: 270px; 
+     height: 270px; 
+   }
+
+   .custom-icon {
+     width: 30px; 
+     height: 30px;
+   }
+
+   .image-container {
+    position: relative;
   }
 
+  .carousel-image {
+    width: 80.5%;
+    height: auto;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;  /* Initially hidden */
+    /* transition: opacity 0.4s ease-in-out; */
+    animation: fadeInText 1s ease-in-out forwards;
+    animation-delay: 1s; /* Delay of 5 seconds */
+  }
+
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* .carousel-item:hover .overlay-text {
+    opacity: 1;  
+  } */
+
+   
+   
 
  }
 
