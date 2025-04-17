@@ -36,6 +36,7 @@
 
 
    /* RELATED WORKS */
+<<<<<<< HEAD
 
    #configrelated{
      position: relative;
@@ -112,6 +113,44 @@
 
    
    
+=======
+
+   #configrelated{
+     position: relative;
+     top: 10px;
+     left: -70px;
+     font-size: 1px;
+   }
+
+   #works{
+     font-size: 2.5rem;
+   }
+
+
+   /* SLIDER MENU */
+
+   #msliderdivcontainer{
+        display: none;
+   }
+
+   .carousel-image {
+     width: 270px; /* Set a smaller width */
+     height: 270px; /* Maintain aspect ratio */
+   }
+
+   .custom-icon {
+     width: 30px; /* Adjust icon size */
+     height: 30px;
+   }
+
+
+   #mobileslider{
+     visibility: visible;
+     position: relative;
+     top: 200px;
+     
+   }
+>>>>>>> 0f50d435cc531d4d85b166becc8a6e4ba3896d34
 
  }
 
