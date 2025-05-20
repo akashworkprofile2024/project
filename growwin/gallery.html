@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Photo Gallery with Lightbox</title>
+
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href=" /screen.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+  
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+
+  <style>
+    .gallery-img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NVIGATION START -->
+  <div class=" d-lg-flex justify-content-lg-center pt-lg-4 mt-lg-0 mt-md-2">
+  <nav class="navbar navbar-expand-lg ps-lg-2 pe-lg-2 ps-md-2 pe-md-2 ps-2 pe-2  ms-md-2 me-md-2 rounded rounded-4 shadow-lg bg-light">
+      <a class="navbar-brand d-lg-flex d-md-flex align-items-center  ms-1" href="#">
+        <img src=" /image/logo.png" width="55" alt="Logo" class="me-2 heartbeat ">
+        <span class="fw-bold text-primary d-none d-lg-block d-md-block">Grow Win Institute</span>
+        <span class="ms-4 d-lg-none d-md-none fw-semibold">GW Institute</span>
+      </a>
+      <button class="navbar-toggler me-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ps-lg-5 pe-lg-5 ms-lg-0 ms-3 fw-semibold fs-5">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php#academicpoint" title="Class V - XII (WBBSE / CBSE / ICSE)">Academic Studies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php#itskillpoint">IT Skill Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.php#aboutuspoint">About Us</a>
+          </li>
+        </ul>
+        <a href="https://wa.me/918777403362" class="ms-3 d-none d-lg-block d-md-none"><img src=" /image/whatsapplogo.svg" alt="" title="Tap to Chat" id="shake-bottom"></a>
+        <a href="https://wa.me/918777403362" class=" btn ms-3 d-block d-lg-none d-md-none d-flex justify-content-center align-items-center fw-semibold" id="tapwhats"><img src=" /image/whatsapplogo.svg" alt="">Whatsapp</a>
+        <a href="https://wa.me/918777403362" class=" btn ms-3 d-none d-lg-none d-md-block d-flex justify-content-center align-items-center fw-semibold" id="tapwhats"><img src=" /image/whatsapplogo.svg" alt="">Whatsapp</a>
+      </div>
+  </nav>
+</div><br><br>
+<!-- NAVIGATION END -->
+
+<!-- Gallery Section -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4 fs-1">Photo <span style="color:#9675fb;">Gallery</span></h2>
+    <div class="row g-3"  id="gallery-container">
+      <!-- Gallery Item 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic1.webp" data-lightbox="gallery" data-title="Image 1">
+          <img src=" /image/gallery/pic1.webp" class="gallery-img rounded shadow" alt="Gallery Image 1">
+        </a>
+      </div>
+      <!-- Gallery Item 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once" >
+        <a href=" /image/gallery/pic2.webp" data-lightbox="gallery" data-title="Image 2">
+          <img src=" /image/gallery/pic2.webp" class="gallery-img rounded shadow" alt="Gallery Image 2">
+        </a>
+      </div>
+      <!-- Gallery Item 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic3.png" data-lightbox="gallery" data-title="Image 3">
+          <img src=" /image/gallery/pic3.png" class="gallery-img rounded shadow" alt="Gallery Image 3">
+        </a>
+      </div>
+      <!-- Gallery Item 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic4.png" data-lightbox="gallery" data-title="Image 4">
+          <img src=" /image/gallery/pic4.png" class="gallery-img rounded shadow" alt="Gallery Image 4">
+        </a>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic5.png" data-lightbox="gallery" data-title="Image 4">
+          <img src=" /image/gallery/pic5.png" class="gallery-img rounded shadow" alt="Gallery Image 4">
+        </a>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic6.png" data-lightbox="gallery" data-title="Image 4">
+          <img src=" /image/gallery/pic6.png" class="gallery-img rounded shadow" alt="Gallery Image 4">
+        </a>
+      </div>
+
+      <!-- Gallery Item 7 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic7.png" data-lightbox="gallery" data-title="Image 4">
+          <img src=" /image/gallery/pic7.png" class="gallery-img rounded shadow" alt="Gallery Image 4">
+        </a>
+      </div>
+
+      <!-- Gallery Item 8 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic8.png" data-lightbox="gallery" data-title="Image 4">
+          <img src=" /image/gallery/pic8.png" class="gallery-img rounded shadow" alt="Gallery Image 4">
+        </a>
+      </div>
+
+      <!-- Gallery Item 9 -->
+       <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic9.png" data-lightbox="gallery" data-title="Image 4">
+          <img src=" /image/gallery/pic9.png" class="gallery-img rounded shadow" alt="Gallery Image 4">
+        </a>
+      </div>
+
+       <!--Gallery Item 10  -->
+       <div class="col-sm-6 col-md-4 col-lg-3 fade-in-fwd animate-once">
+        <a href=" /image/gallery/pic10.png" data-lightbox="gallery" data-title="Image 4">
+          <img src=" /image/gallery/pic10.png" class="gallery-img rounded shadow" alt="Gallery Image 4">
+        </a>
+      </div> 
+
+    </div>
+  </div>
+<!-- Gallery Section end -->
+
+ <!-- FOOTER SECTION START -->
+<div class="container-fluid pb-1" id="pointfooter" style="background-color:black">
+    <div class="row">
+      <div class="col-lg-4  bg-sucess pt-5 ps-5 pe-5 pb-1 text-light">
+        <div class=" d-lg-flex justify-content-center">
+        <p><img src=" /image/logo.png" class=" rounded rounded-circle img-fluid" style="weight:100px; height:100px;" alt=""><span class='align-content-center ms-lg-3 ms-md-3 ms-3 fw-semibold fs-3'>Grow Win Institute</span><br><span class='fw-semibold'>Here’s everything you need to know before you start your <br> journey with our Institute. <br><br><span style="color: #a587ff;">Address</span> : Madhyamgram Bankimpally, Near Madhyamgram Girls School , Kol-700129 </span><br><br><span class="fw-semibold"><i class="bi bi-telephone-fill" style="color: #a587ff;"></i> +91-7980898263 ||  <i class="bi bi-whatsapp fs-5" style="color: #a587ff;"></i><a href="https://wa.me/918777403362" title="CLICK ON IT" class="text-light" style="text-decoration: none;"> Chat Here</a></span></p>
+        </div>
+      </div>
+      <div class="col-lg-8 pt-5 ps-5 pe-5 pb-1">
+        <div class="row">
+          <!-- For Big Screen  -->
+        <div class='col-lg-6 col-md-6 col-6  text-center text-light d-none d-lg-block d-md-block'>
+            <span class='fw-bold fs-5 ms-lg-4'>Links</span>
+            <ul style='list-style-type:none' class='fw-semibold'>
+              <li class='mt-3'><a href="index.php" class='text-light' style='text-decoration:none'>Home</a></li>
+              <li class='mt-3'><a href="index.php#academicpoint" class='text-light' style='text-decoration:none'>Academic Studies</a></li>
+              <li class='mt-3'><a href="index.php#itskillpoint" class='text-light' style='text-decoration:none'>IT Skill Courses</a></li>
+              <li class='mt-3'><a href="#" class='text-light' style='text-decoration:none'>Gallery</a></li>
+              <li class='mt-3'><a class='text-light' href="index.php#aboutuspoint" style='text-decoration:none;'>About us</a><li>
+            </ul>
+         </div>
+          <!-- For Small Screen -->
+        <div class='col-lg-6 col-md-6 col-6  text-center text-light d-block d-lg-none d-md-none'>
+            <span class='fw-bold' style="font-size: 0.9rem;">Links</span>
+            <ul style='list-style-type:none' class='fw-semibold me-4'>
+              <li class='mt-3'><a href="index.php" class='text-light' style='text-decoration:none'>Home</a></li>
+              <li class='mt-3'><a href="index.php#academicpoint" class='text-light' style='text-decoration:none'>Academic Studies</a></li>
+              <li class='mt-3'><a href="index.php#itskillpoint" class='text-light' style='text-decoration:none'>IT Skill Courses</a></li>
+              <li class='mt-3'><a href="#" class='text-light' style='text-decoration:none'>Gallery</a></li>
+              <li class='mt-3'><a class='text-light' href="index.php#aboutuspoint" style='text-decoration:none;'>About us</a><li>
+            </ul>
+         </div>   
+
+          <!-- For Big Screen  -->
+         <div class='col-lg-6 col-md-6 col-6  text-center text-light d-none d-lg-block d-md-block'>
+            <span class='fw-bold fs-5 ms-lg-4'>Social Media (Comming Soon)</span>
+            <ul style='list-style-type:none'>
+              <li class='mt-3 fw-semibold'><i class="bi bi-youtube"></i> Youtube </li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-facebook"></i> Facebook</li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-instagram"></i> Instagram</li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-twitter-x "></i> Twitter</li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-threads"></i>   Threads</li>
+            </ul>
+         </div>
+         <!-- For Small Screen -->
+          <div class='col-lg-6 col-md-6 col-6  text-center text-light d-block d-lg-none d-md-none'>
+            <span class='fw-bold d-flex justify-content-center ms-4' style="font-size: 0.8rem;">Social Media (Comming Soon)</span>
+            <ul style='list-style-type:none' class=" me-2">
+              <li class='mt-3 fw-semibold'><i class="bi bi-youtube"></i> Youtube </li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-facebook"></i> Facebook</li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-instagram"></i> Instagram</li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-twitter-x "></i> Twitter</li>
+              <li class='mt-3 fw-semibold'><i class="bi bi-threads"></i>   Threads</li>
+            </ul>
+         </div>
+
+        </div>
+      </div>
+      <hr class='text-light'>
+      <div>
+         <div class='d-flex justify-content-center align-items-center text-secondary fw-semibold'>
+            <p class='text-secondary d-none d-md-block d-lg-block'>Copyright © 2025 Grow Win Institute. All rights reserved.</p>
+            <p class='text-secondary d-block d-md-none d-lg-none' style="font-size: 0.8rem;">Copyright © 2025 Grow Win Institute. All rights reserved.</p>
+         </div>
+      </div> 
+    </div>
+ </div>
+ <!--  FOOTER SECTION END -->  
+
+ <!-- <script>
+  fetch("image-list.php")
+    .then(response => response.json())
+    .then(images => {
+      const container = document.getElementById('gallery-container');
+      images.forEach((src, index) => {
+        const col = document.createElement('div');
+        col.className = 'col-sm-6 col-md-4 col-lg-3 mb-3 ';
+        col.innerHTML = `
+          <a href="${src}" data-lightbox="gallery" data-title="Image ${index + 1}">
+            <img src="${src}" class="gallery-img rounded shadow " alt="Gallery Image ${index + 1}">
+          </a>
+        `;
+        container.appendChild(col);
+      });
+    })
+    .catch(error => console.error('Error loading images:', error));
+
+
+</script> -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedElements = document.querySelectorAll(".animate-once");
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    }, { threshold: 0.0 }); // Adjust threshold as needed
+  
+    animatedElements.forEach((el) => observer.observe(el));
+  });
+</script>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+</body>
+<style>
+
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+  @media (max-width: 768px) {
+   .fade-in-fwd.animate {
+	animation: fade-in-fwd 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+  }
+</style>
+</html>
